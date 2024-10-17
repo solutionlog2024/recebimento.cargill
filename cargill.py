@@ -25,7 +25,7 @@ st.markdown('''
 ''')
 
 # Input de data para filtrar o DataFrame
-data_selecionada = st.date_input("Selecione uma data", value=pd.to_datetime('01/01/2024').date())
+data_selecionada = st.date_input("Selecione uma data", value=pd.to_datetime().date())
 
 # Filtrando o DataFrame pela data selecionada
 df_filtrado = df[df['DATA'].dt.date == data_selecionada]
