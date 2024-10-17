@@ -24,8 +24,9 @@ st.markdown('''
             e assim garantir a qualidade da informação para com nossos clientes.
 ''')
 
+
 # Input de data para filtrar o DataFrame
-data_selecionada = st.date_input("Selecione uma data", value=pd.Timestamp.now().date()
+data_selecionada = st.date_input("Selecione uma data", value=pd.Timestamp.now().date())
 
 # Filtrando o DataFrame pela data selecionada
 df_filtrado = df[df['DATA'].dt.date == data_selecionada]
