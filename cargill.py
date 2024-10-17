@@ -49,4 +49,5 @@ Solution Logística
 #Abrindo o link do Power Bi Cargil
 pbix=st.link_button('Clique para Acessar ao Power BI','https://app.powerbi.com/view?r=eyJrIjoiYzE3ZmFlZmItMWYwZi00ODdjLTkyZGItNzdiODRiZTk3YThmIiwidCI6IjNiNTg1ODA2LWQzNTMtNDQxYy1iNGU2LTM3ZGE3YTM1NzMxNiJ9')
 zap=st.link_button('Fale com o Desenvolvedor','https://api.whatsapp.com/send/?phone=5582988639394&text&type=phone_number&app_absent=0')
-
+#Removendo a página de código lateral
+st.set_page_config(page_title="Painel de Recebimento", layout="wide", initial_sidebar_state="collapsed")
